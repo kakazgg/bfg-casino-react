@@ -6,9 +6,6 @@ class Tournaments extends React.Component {
             <main>
                 <section class="banner-section inner-banner tournaments">
                     <div class="overlay">
-                        <div class="shape-area">
-                            <img src="assets/images/tournaments-illus.png" class="tournaments-illu" alt="img"/>
-                        </div>
                         <div class="banner-content">
                             <div class="container">
                                 <div class="content-shape">
