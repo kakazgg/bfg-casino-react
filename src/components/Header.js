@@ -1,55 +1,54 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Header extends React.Component {
-    render () {
+    render() {
         return (
             <header className="header-section">
-        <div className="overlay">
-            <div className="container">
-                <div className="row d-flex header-area">
-                    <nav className="navbar navbar-expand-lg navbar-light">
-                        <a className="navbar-brand" href="index.html">
-                            <span className="specialelite logothetext">The </span>
-                            <span className="permanentmarker logoBFGtext">B.F.G's</span>
-                        </a>
-                        <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbar-content">
-                            <i className="fas fa-bars"></i>
-                        </button>
-                        <div className="collapse navbar-collapse justify-content-end" id="navbar-content">
-                            <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
-                                    <NavLink className="nav-link" to="/" onClick={() => window.reload()}>Home</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink className="nav-link" to="/DashboardNoLog" onClick={() => window.reload()}>Dashboard</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink className="nav-link" to="/Sports" onClick={() => window.reload()}>Sports</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink className="nav-link" to="/Currencies" onClick={() => window.reload()}>Currency</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink className="nav-link" to="/Tournaments" onClick={() => window.reload()}>Tournaments</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink className="nav-link" to="/Affiliate" onClick={() => window.reload()}>Affiliate</NavLink>
-                                </li>
-                            </ul>
-                            <div className="right-area header-action d-flex align-items-center max-un">
-                                <button type="button" className="cmn-btn reg" data-bs-toggle="modal" data-bs-target="#loginMod">
-                                    Login
+                <div className="overlay">
+                    <div className="container">
+                        <div className="row d-flex header-area">
+                            <nav className="navbar navbar-expand-lg navbar-light">
+                                <a className="navbar-brand" href="index.html">
+                                    <span className="specialelite logothetext">The </span>
+                                    <span className="permanentmarker logoBFGtext">B.F.G's</span>
+                                </a>
+                                <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbar-content">
+                                    <i className="fas fa-bars"></i>
                                 </button>
-                            </div>
+                                <div className="collapse navbar-collapse justify-content-end" id="navbar-content">
+                                    <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
+                                        <li className="nav-item">
+                                            <NavLink className="nav-link" to="/" onClick={() => window.reload()}>Home</NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                            <NavLink className="nav-link" to="/DashboardNoLog" onClick={() => window.reload()}>Dashboard</NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                            <NavLink className="nav-link" to="/Sports" onClick={() => window.reload()}>Sports</NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                            <NavLink className="nav-link" to="/Currencies" onClick={() => window.reload()}>Currency</NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                            <NavLink className="nav-link" to="/Tournaments" onClick={() => window.reload()}>Tournaments</NavLink>
+                                        </li>
+                                        <li className="nav-item">
+                                            <NavLink className="nav-link" to="/Affiliate" onClick={() => window.reload()}>Affiliate</NavLink>
+                                        </li>
+                                    </ul>
+                                    <div className="right-area header-action d-flex align-items-center max-un">
+                                        <button type="button" className="cmn-btn reg" data-bs-toggle="modal" data-bs-target="#loginMod">
+                                            Login
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
-                    </nav>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </header>
-    
+            </header>
         )
     }
 }

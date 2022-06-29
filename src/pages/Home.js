@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 class Home extends React.Component {
     render() {
@@ -546,7 +546,7 @@ class Home extends React.Component {
                                 <div className="col-lg-12 d-flex justify-content-center">
                                     <div className="bottom-area mt-60">
                                         <span className="btn-border">
-                                            <a href="soccer-bets-2.html" className="cmn-btn">Browse More</a>
+                                            <Link to="/Sports" className="cmn-btn" onClick={() => window.reload()}>Browse More</Link>
                                         </span>
                                     </div>
                                 </div>

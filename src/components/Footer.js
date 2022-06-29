@@ -32,9 +32,9 @@ class Footer extends React.Component {
                                 <span className="permanentmarker logoBFGtext">B.F.G's</span>
                             </a>
                             <ul className="footer-link">
-                                <li><Link to="/Contact">Contact</Link></li>
-                                <li><Link to="/Terms">Terms of Services</Link></li>
-                                <li><Link to="/Privacy">Privacy</Link></li>
+                                <li><Link to="/Contact" onClick={() => window.reload()}>Contact</Link></li>
+                                <li><Link to="/Terms" onClick={() => window.reload()}>Terms of Services</Link></li>
+                                <li><Link to="/Privacy" onClick={() => window.reload()}>Privacy</Link></li>
                             </ul>
                         </div>
                     </div>

@@ -125,6 +125,7 @@ textarea:focus {
 button {
   border: none;
   cursor: pointer;
+  font-family: 'fjalla one';
 }
 
 input,
