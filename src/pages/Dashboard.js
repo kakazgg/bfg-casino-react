@@ -1,7 +1,15 @@
 import React from "react";
 
-class Dashboard extends React.Component {
-    render() {
+//auth & redux
+import {connect} from 'react-redux';
+import {logoutUser} from './../auth/actions/userActions';
+
+
+// React router
+import {useNavigate} from 'react-router-dom';
+
+const Dashboard = ({logoutUser, user, email}) => {
+    const navigate = useNavigate();
         return (
             <main>
                 <section class="dashboard-content pt-120">
@@ -57,13 +65,16 @@ class Dashboard extends React.Component {
                                     <div class="dashboard-sidebar">
                                         <div class="single-item">
                                             <img src="assets/images/profile-img-1.png" alt="images" />
-                                            <h5>Philip Dunn</h5>
+                                            <h5>{user.name}</h5>
                                             <p>ID: 32315145</p>
+                                            <span class="btn-border">
+                                                <button to="#" class="cmn-btn" onClick={() => logoutUser(navigate)}>Log Out</button>
+                                            </span>
                                         </div>
                                         <div class="balance">
                                             <div class="single-item">
                                                 <img src="assets/images/icon/dashboard-sidebar-icon-1.png" alt="images" />
-                                                <h5>$5135.00</h5>
+                                                <h5>$0.00</h5>
                                                 <p>Available Balance</p>
                                             </div>
                                             <div class="bottom-area d-flex align-items-center justify-content-between">
@@ -90,8 +101,8 @@ class Dashboard extends React.Component {
                                                     <div class="single-info">
                                                         <img src="assets/images/icon/user-info-icon-1.png" alt="icon" />
                                                         <div class="text-area">
-                                                            <h4>678</h4>
-                                                            <p class="mdr">Total Match</p>
+                                                            <h4>0</h4>
+                                                            <p class="mdr">Total Win Streak</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -99,7 +110,7 @@ class Dashboard extends React.Component {
                                                     <div class="single-info">
                                                         <img src="assets/images/icon/user-info-icon-2.png" alt="icon" />
                                                         <div class="text-area">
-                                                            <h4>91%</h4>
+                                                            <h4>0%</h4>
                                                             <p class="mdr">Win Ratio</p>
                                                         </div>
                                                     </div>
@@ -108,7 +119,7 @@ class Dashboard extends React.Component {
                                                     <div class="single-info">
                                                         <img src="assets/images/icon/user-info-icon-3.png" alt="icon" />
                                                         <div class="text-area">
-                                                            <h4>22</h4>
+                                                            <h4>0</h4>
                                                             <p class="mdr">Achievements</p>
                                                         </div>
                                                     </div>
@@ -148,7 +159,7 @@ class Dashboard extends React.Component {
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">2021-01-07 16:33:53</th>
-                                                                    <td>Refer com.</td>
+                                                                    <td>Referral</td>
                                                                     <td>SOL</td>
                                                                     <td>
                                                                         <img src="assets/images/icon/sol-btc.png"
@@ -178,7 +189,7 @@ class Dashboard extends React.Component {
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">2021-01-07 16:33:53</th>
-                                                                    <td>Refer com.</td>
+                                                                    <td>Referral</td>
                                                                     <td>SOL</td>
                                                                     <td>
                                                                         <img src="assets/images/icon/sol-btc.png"
@@ -214,159 +225,7 @@ class Dashboard extends React.Component {
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div class="bet-this-game">
-                                                    <div class="tab-content">
-                                                        <div class="tab-pane fade show active" id="open-playing" role="tabpanel"
-                                                            aria-labelledby="open-playing-tab">
-                                                            <div class="single-area">
-                                                                <div class="head-area d-flex align-items-center">
-                                                                    <span class="mdr cmn-btn">Pick Winner</span>
-                                                                    <p>Mar 23, 2022,3:45PM EDT</p>
-                                                                </div>
-                                                                <div class="main-content">
-                                                                    <div class="team-single">
-                                                                        <h4>Arsenal</h4>
-                                                                        <span class="mdr">Home</span>
-                                                                        <div class="img-area">
-                                                                            <img src="assets/images/team-logo-1.png" alt="img" />
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="mid-area text-center">
-                                                                        <div class="countdown d-flex align-items-center justify-content-center">
-                                                                            <h4>
-                                                                                <span class="hours">00</span><span
-                                                                                    class="seperator">:</span>
-                                                                            </h4>
-                                                                            <h4>
-                                                                                <span class="minutes">00</span><span
-                                                                                    class="seperator">:</span>
-                                                                            </h4>
-                                                                            <h4>
-                                                                                <span class="seconds">00</span>
-                                                                            </h4>
-                                                                        </div>
-                                                                        <h6>Division- Belarus</h6>
-                                                                    </div>
-                                                                    <div class="team-single">
-                                                                        <h4>Volna</h4>
-                                                                        <span class="mdr">Away</span>
-                                                                        <div class="img-area">
-                                                                            <img src="assets/images/team-logo-2.png" alt="img" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="bottom-item">
-                                                                    <button type="button" class="cmn-btn firstTeam"
-                                                                        data-bs-toggle="modal" data-bs-target="#betpop-up">Eagle will
-                                                                        win</button>
-                                                                    <button type="button" class="cmn-btn draw" data-bs-toggle="modal"
-                                                                        data-bs-target="#betpop-up">Draw</button>
-                                                                    <button type="button" class="cmn-btn lastTeam"
-                                                                        data-bs-toggle="modal" data-bs-target="#betpop-up">Paeek will
-                                                                        win</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="canceled" role="tabpanel"
-                                                            aria-labelledby="canceled-tab">
-                                                            <div class="single-area">
-                                                                <div class="head-area d-flex align-items-center">
-                                                                    <span class="mdr cmn-btn">Pick Winner</span>
-                                                                    <p>Mar 23, 2022,3:45PM EDT</p>
-                                                                </div>
-                                                                <div class="main-content">
-                                                                    <div class="team-single">
-                                                                        <h4>Apollon</h4>
-                                                                        <span class="mdr">Home</span>
-                                                                        <div class="img-area">
-                                                                            <img src="assets/images/team-logo-3.png" alt="img" />
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="mid-area text-center">
-                                                                        <div class="countdown d-flex align-items-center justify-content-center">
-                                                                            <h4>
-                                                                                <span class="hours">00</span><span
-                                                                                    class="seperator">:</span>
-                                                                            </h4>
-                                                                            <h4>
-                                                                                <span class="minutes">00</span><span
-                                                                                    class="seperator">:</span>
-                                                                            </h4>
-                                                                            <h4>
-                                                                                <span class="seconds">00</span>
-                                                                            </h4>
-                                                                        </div>
-                                                                        <h6>Division (Cyprus)</h6>
-                                                                    </div>
-                                                                    <div class="team-single">
-                                                                        <h4>Paeek</h4>
-                                                                        <span class="mdr">Away</span>
-                                                                        <div class="img-area">
-                                                                            <img src="assets/images/team-logo-4.png" alt="img" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="bottom-item">
-                                                                    <button type="button" class="cmn-btn" data-bs-toggle="modal"
-                                                                        data-bs-target="#betpop-up">Eagle will win</button>
-                                                                    <button type="button" class="cmn-btn" data-bs-toggle="modal"
-                                                                        data-bs-target="#betpop-up">Draw</button>
-                                                                    <button type="button" class="cmn-btn" data-bs-toggle="modal"
-                                                                        data-bs-target="#betpop-up">Paeek will win</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="finished" role="tabpanel"
-                                                            aria-labelledby="finished-tab">
-                                                            <div class="single-area">
-                                                                <div class="head-area d-flex align-items-center">
-                                                                    <span class="mdr cmn-btn">Pick Winner</span>
-                                                                    <p>Mar 23, 2022,3:45PM EDT</p>
-                                                                </div>
-                                                                <div class="main-content">
-                                                                    <div class="team-single">
-                                                                        <h4>Raufoss</h4>
-                                                                        <span class="mdr">Home</span>
-                                                                        <div class="img-area">
-                                                                            <img src="assets/images/team-logo-5.png" alt="img" />
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="mid-area text-center">
-                                                                        <div class="countdown d-flex align-items-center justify-content-center">
-                                                                            <h4>
-                                                                                <span class="hours">00</span><span
-                                                                                    class="seperator">:</span>
-                                                                            </h4>
-                                                                            <h4>
-                                                                                <span class="minutes">00</span><span
-                                                                                    class="seperator">:</span>
-                                                                            </h4>
-                                                                            <h4>
-                                                                                <span class="seconds">00</span>
-                                                                            </h4>
-                                                                        </div>
-                                                                        <h6>Division (Norway)</h6>
-                                                                    </div>
-                                                                    <div class="team-single">
-                                                                        <h4>Åsane</h4>
-                                                                        <span class="mdr">Away</span>
-                                                                        <div class="img-area">
-                                                                            <img src="assets/images/team-logo-6.png" alt="img" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="bottom-item">
-                                                                    <button type="button" class="cmn-btn" data-bs-toggle="modal"
-                                                                        data-bs-target="#betpop-up">Eagle will win</button>
-                                                                    <button type="button" class="cmn-btn" data-bs-toggle="modal"
-                                                                        data-bs-target="#betpop-up">Draw</button>
-                                                                    <button type="button" class="cmn-btn" data-bs-toggle="modal"
-                                                                        data-bs-target="#betpop-up">Paeek will win</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="deposit" role="tabpanel" aria-labelledby="deposit-tab">
@@ -381,8 +240,8 @@ class Dashboard extends React.Component {
                                                                     <option value="1">SOL</option>
                                                                 </select>
                                                             </div>
-                                                            <h6>0.1018183873 <span>SOL</span></h6>
-                                                            <p class="mdr">1 SOL = 41 USD</p>
+                                                            <h6>0.00 <span>SOL</span></h6>
+                                                            <p class="mdr">1 SOL = 34 USD</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-xxl-8 col-xl-7">
@@ -429,8 +288,8 @@ class Dashboard extends React.Component {
                                                                     <option value="1">SOL</option>
                                                                 </select>
                                                             </div>
-                                                            <h6>0.1018183873 <span>SOL</span></h6>
-                                                            <p class="mdr">1 SOL = 41 USD</p>
+                                                            <h6>0.00 <span>SOL</span></h6>
+                                                            <p class="mdr">1 SOL = 34 USD</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-xxl-8 col-xl-7">
@@ -739,7 +598,7 @@ class Dashboard extends React.Component {
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">2021-01-07 16:33:53</th>
-                                                                <td>Refer com.</td>
+                                                                <td>Referral</td>
                                                                 <td>SOL</td>
                                                                 <td>
                                                                     <img src="assets/images/icon/sol-btc.png"
@@ -769,7 +628,7 @@ class Dashboard extends React.Component {
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">2021-01-07 16:33:53</th>
-                                                                <td>Refer com.</td>
+                                                                <td>Referral</td>
                                                                 <td>SOL</td>
                                                                 <td>
                                                                     <img src="assets/images/icon/sol-btc.png"
@@ -810,7 +669,7 @@ class Dashboard extends React.Component {
                                                             <div class="icon-area">
                                                                 <img src="assets/images/icon/message-icon.png" alt="icon" />
                                                             </div>
-                                                            <p class="mdr">philip684@gmail.com</p>
+                                                            <p class="mdr">{user.email}</p>
                                                             <a href="personal-details-setting.html" class="mdr">Unverified
                                                                 Account</a>
                                                         </div>
@@ -951,7 +810,12 @@ class Dashboard extends React.Component {
                 </section>
             </main>
         )
-    }
-}
+    };
 
-export default Dashboard
+const mapStateToProps = ({session}) => ({
+    user: session.user,
+    email: session.email
+
+})
+
+export default connect(mapStateToProps, {logoutUser})(Dashboard);

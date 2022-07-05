@@ -5508,4 +5508,17 @@ p {
   padding-bottom: 300px;
   padding-top: 200px;
 }
+
+input[type="password"] {
+  font-family: "fjalla one";
+}
+
+.loading-modal {
+  padding-left: 180px;
+}
+
+.forgot-password {
+  font-family: "fjalla one";
+  color: #fe8f9c;
+}
 /*# sourceMappingURL=style.css.map */

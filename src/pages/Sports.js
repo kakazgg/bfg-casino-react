@@ -1,5 +1,4 @@
 import React from "react";
-import Sportsfeed from "./Sportsfeed";
 
 
 class Sports extends React.Component {
@@ -364,7 +363,6 @@ class Sports extends React.Component {
                                     </div>
                                 </div>
                                 <div class="col-xxl-9 col-lg-8">
-                                    <Sportsfeed />
                                     <div class="single-area">
                                         <div class="head-area d-flex align-items-center">
                                             <span class="mdr cmn-btn">Pick Winner</span>
@@ -740,7 +738,6 @@ class Sports extends React.Component {
                         </div>
                     </div>
                 </div>
-                <script src="assets/js/Sportsfeed.js"></script>
             </main>
         )
     }

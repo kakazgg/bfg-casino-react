@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 class Header extends React.Component {
     render() {
         return (
-            <header className="header-section">
+            <div className="header-section">
                 <div className="overlay">
                     <div className="container">
                         <div className="row d-flex header-area">
@@ -39,7 +39,7 @@ class Header extends React.Component {
                                         </li>
                                     </ul>
                                     <div className="right-area header-action d-flex align-items-center max-un">
-                                        <button type="button" className="cmn-btn reg" data-bs-toggle="modal" data-bs-target="#loginMod">
+                                        <button type="button" className="cmn-btn reg" data-bs-toggle="modal" data-bs-target="#loginMod" to="/log">
                                             Login
                                         </button>
                                     </div>
@@ -47,8 +47,9 @@ class Header extends React.Component {
                             </nav>
                         </div>
                     </div>
-                </div>
-            </header>
+                </div>  
+            </div>
+            
         )
     }
 }

@@ -55,3 +55,7 @@ select {
 .loading {
   padding: 16px;
 }
+
+input[type="password"] {
+  font-family: "fjalla one";
+}
