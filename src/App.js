@@ -20,8 +20,6 @@ import LoginModal from "./components/LoginModal";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // auth & redux
-import AuthRoute from "./components/AuthRoute";
-import BasicRoute from "./components/BasicRoute";
 import { connect } from "react-redux";
 
 import './App.css';
