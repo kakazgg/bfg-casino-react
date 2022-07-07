@@ -86,7 +86,7 @@ class Sports extends React.Component {
                                                             <span class="checkmark"></span>
                                                         </span>
                                                         <span class="item-title d-flex align-items-center">
-                                                            <img src="assets/images/icon/team-logo-2.png" alt="icon" />
+                                                            <img src="assets/images/icon/arsenal-icon.png" alt="icon" />
                                                             <span>Arsenal</span>
                                                         </span>
                                                     </span>
@@ -98,7 +98,7 @@ class Sports extends React.Component {
                                                             <span class="checkmark"></span>
                                                         </span>
                                                         <span class="item-title d-flex align-items-center">
-                                                            <img src="assets/images/icon/team-logo-3.png" alt="icon" />
+                                                            <img src="assets/images/icon/crystal-palace-icon.png" alt="icon" />
                                                             <span>Crystal Palace</span>
                                                         </span>
                                                     </span>
@@ -110,7 +110,7 @@ class Sports extends React.Component {
                                                             <span class="checkmark"></span>
                                                         </span>
                                                         <span class="item-title d-flex align-items-center">
-                                                            <img src="assets/images/icon/team-logo-4.png" alt="icon" />
+                                                            <img src="assets/images/icon/fulham-icon.png" alt="icon" />
                                                             <span>Fulham</span>
                                                         </span>
                                                     </span>
@@ -122,7 +122,7 @@ class Sports extends React.Component {
                                                             <span class="checkmark"></span>
                                                         </span>
                                                         <span class="item-title d-flex align-items-center">
-                                                            <img src="assets/images/icon/team-logo-4.png" alt="icon" />
+                                                            <img src="assets/images/icon/liverpool-icon.png" alt="icon" />
                                                             <span>Liverpool</span>
                                                         </span>
                                                     </span>
