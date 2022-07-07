@@ -72,8 +72,8 @@ class Currencies extends React.Component {
                                                 <tr>
                                                     <th scope="row">01</th>
                                                     <td>
-                                                        <img src="assets/images/icon/btc.png" alt="icon" />
-                                                        BTC
+                                                        <img src="assets/images/icon/eth.png" alt="icon" />
+                                                        ETH
                                                     </td>
                                                     <td>
                                                         <img src="assets/images/icon/sol-btc.png" alt="icon" />
@@ -116,8 +116,8 @@ class Currencies extends React.Component {
                                                 <tr>
                                                     <th scope="row">03</th>
                                                     <td>
-                                                        <img src="assets/images/icon/btc.png" alt="icon" />
-                                                        BTC
+                                                        <img src="assets/images/icon/eth.png" alt="icon" />
+                                                        ETH
                                                     </td>
                                                     <td>
                                                         <img src="assets/images/icon/sol-btc.png" alt="icon" />
@@ -182,8 +182,8 @@ class Currencies extends React.Component {
                                                 <tr>
                                                     <th scope="row">06</th>
                                                     <td>
-                                                        <img src="assets/images/icon/btc.png" alt="icon" />
-                                                        BTC
+                                                        <img src="assets/images/icon/xrp.png" alt="icon" />
+                                                        XRP
                                                     </td>
                                                     <td>
                                                         <img src="assets/images/icon/sol-btc.png" alt="icon" />
