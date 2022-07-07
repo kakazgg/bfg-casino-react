@@ -12,7 +12,7 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
 
-import HeaderLog from "./components/HeaderLog";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LoginModal from "./components/LoginModal";
 import BetModal from "./components/BetModal";
@@ -32,7 +32,7 @@ function App({ checked }) {
   return (
       <Router forceRefresh={true}>
         <div>
-        <HeaderLog />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route elements={<BasicRoute/>}>
