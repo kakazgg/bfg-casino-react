@@ -12,7 +12,6 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
 
-import Header from "./components/Header";
 import HeaderLog from "./components/HeaderLog";
 import Footer from "./components/Footer";
 import LoginModal from "./components/LoginModal";
