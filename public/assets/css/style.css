@@ -5469,6 +5469,7 @@ p {
 
 .logothetext {
   font-size: '30px';
+  padding-right: 5px;
 }
 
 .logoBFGtext1 {
@@ -5484,6 +5485,7 @@ p {
 .logothetext1 {
   font-size: 60px;
   padding-bottom: 50px;
+  padding-right: 15px;
 }
 
 .logothetext2 {
@@ -5541,5 +5543,18 @@ input[type="password"] {
 .userBalance {
   text-align: center;
   padding-top: 10px;
+}
+
+.odds-text {
+  text-align: center!important;
+}
+
+.notificationEdit {
+  padding-right: 100px;
+}
+
+.headingbox {
+  border: 2px;
+  border-color: #00ff6d;
 }
 /*# sourceMappingURL=style.css.map */

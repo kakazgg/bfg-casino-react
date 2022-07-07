@@ -1,12 +1,13 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import {Route, NavLink} from 'react-router-dom';
+import {connect} from 'react-redux';
 
-//auth & redux
-import { connect } from 'react-redux';
-
-const HeaderLog = ({ user }) => {
+const AuthRoute = ({user, children, authenticated, ...rest}) => {
     return (
-        <header class="header-section user-dashboard">
+        <Route
+        {...rest}
+        render={
+            () => !authenticated ? (children) : (
+                <header class="header-section user-dashboard">
             <div class="overlay">
                 <div class="container">
                     <div class="row d-flex header-area">
@@ -148,14 +149,15 @@ const HeaderLog = ({ user }) => {
                 </div>
             </div>
         </header>
-    )
+            )
+        }
+        />
+    );
+
 };
 
-
 const mapStateToProps = ({ session }) => ({
-    user: session.user,
-    email: session.email,
-    _id: session._id
+    authenticated: session.authenticated
 });
 
-export default connect(mapStateToProps)(HeaderLog);
+export default connect(mapStateToProps)(AuthRoute);

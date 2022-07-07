@@ -27,10 +27,10 @@ class Home extends React.Component {
                                         <div className="main-content">
                                             <div className="top-area section-text">
                                                 <div className="title-area-1">
-                                                    <span className="specialelite logothetext1">The </span>
+                                                    <span className="specialelite logothetext1">The</span>
                                                     <span className="permanentmarker logoBFGtext1">B.F.G's</span>
                                                 </div>
-                                                <p className="xlr">The fastest and easiest way to bet on your favourite live sports, gaming tournaments and crypto price action.</p>
+                                                <p className="xlr">The fastest and easiest way to bet<br/> on your favourite live sports,<br/> gaming tournaments and crypto price action.</p>
                                             </div>
                                             <div className="bottom-area">
                                                 <span className="btn-border">
@@ -247,47 +247,48 @@ class Home extends React.Component {
                                     <div className="single-area">
                                         <div className="head-area d-flex align-items-center">
                                             <span className="mdr cmn-btn">Pick Winner</span>
-                                            <p>Mar 23, 2022,3:45PM EDT</p>
+                                            <p>5th August, 2022, 19:00 PM UTC</p>
                                         </div>
                                         <div className="main-content">
+                                            <div className="team-single">
+                                                <h4>Palace</h4>
+                                                <span className="mdr">Home</span>
+                                                <div className="img-area">
+                                                    <img src="assets/images/crystal-palace-logo.png" alt="img" />
+                                                </div>
+                                            </div>
+                                            <div className="mid-area text-center">
+                                                <div className="countdown d-flex align-items-center justify-content-center">
+                                                    <h4>
+                                                        <span className="minutes">00</span><span
+                                                            className="seperator">:</span>
+                                                    </h4>
+                                                    <h4>
+                                                        <span className="seconds">00</span>
+                                                    </h4>
+                                                </div>
+                                                <div className="countdown d-flex align-items-center justify-content-center">
+                                                    <h4>
+                                                        <span>0 - 0</span>
+                                                    </h4>
+                                                </div>
+                                                <h6>Premier League</h6>
+                                            </div>
                                             <div className="team-single">
                                                 <h4>Arsenal</h4>
-                                                <span className="mdr">Home</span>
-                                                <div className="img-area">
-                                                    <img src="assets/images/team-logo-1.png" alt="img" />
-                                                </div>
-                                            </div>
-                                            <div className="mid-area text-center">
-                                                <div className="countdown d-flex align-items-center justify-content-center">
-                                                    <h4>
-                                                        <span className="hours">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="minutes">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="seconds">00</span>
-                                                    </h4>
-                                                </div>
-                                                <h6>Division- Belarus</h6>
-                                            </div>
-                                            <div className="team-single">
-                                                <h4>Volna</h4>
                                                 <span className="mdr">Away</span>
                                                 <div className="img-area">
-                                                    <img src="assets/images/team-logo-2.png" alt="img" />
+                                                    <img src="assets/images/arsenal-logo.png" alt="img" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="bottom-item">
                                             <button type="button" className="cmn-btn firstTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Eagle will win</button>
+                                                data-bs-target="#betpop-up">Win</button>
                                             <button type="button" className="cmn-btn draw" data-bs-toggle="modal"
                                                 data-bs-target="#betpop-up">Draw</button>
                                             <button type="button" className="cmn-btn lastTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Paeek will win</button>
+                                                data-bs-target="#betpop-up">Win</button>
                                         </div>
                                     </div>
                                 </div>
@@ -295,22 +296,18 @@ class Home extends React.Component {
                                     <div className="single-area">
                                         <div className="head-area d-flex align-items-center">
                                             <span className="mdr cmn-btn">Pick Winner</span>
-                                            <p>Mar 23, 2022,3:45PM EDT</p>
+                                            <p>6th August, 2022, 11:30 AM UTC</p>
                                         </div>
                                         <div className="main-content">
                                             <div className="team-single">
-                                                <h4>Apollon</h4>
+                                                <h4>Fulham</h4>
                                                 <span className="mdr">Home</span>
                                                 <div className="img-area">
-                                                    <img src="assets/images/team-logo-3.png" alt="img" />
+                                                    <img src="assets/images/fulham-logo.png" alt="img" />
                                                 </div>
                                             </div>
                                             <div className="mid-area text-center">
                                                 <div className="countdown d-flex align-items-center justify-content-center">
-                                                    <h4>
-                                                        <span className="hours">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
                                                     <h4>
                                                         <span className="minutes">00</span><span
                                                             className="seperator">:</span>
@@ -319,215 +316,28 @@ class Home extends React.Component {
                                                         <span className="seconds">00</span>
                                                     </h4>
                                                 </div>
-                                                <h6>Division (Cyprus)</h6>
-                                            </div>
-                                            <div className="team-single">
-                                                <h4>Paeek</h4>
-                                                <span className="mdr">Away</span>
-                                                <div className="img-area">
-                                                    <img src="assets/images/team-logo-4.png" alt="img" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="bottom-item">
-                                            <button type="button" className="cmn-btn firstTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Eagle will win</button>
-                                            <button type="button" className="cmn-btn draw" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Draw</button>
-                                            <button type="button" className="cmn-btn lastTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Paeek will win</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="single-area">
-                                        <div className="head-area d-flex align-items-center">
-                                            <span className="mdr cmn-btn">Pick Winner</span>
-                                            <p>Mar 23, 2022,3:45PM EDT</p>
-                                        </div>
-                                        <div className="main-content">
-                                            <div className="team-single">
-                                                <h4>Raufoss</h4>
-                                                <span className="mdr">Home</span>
-                                                <div className="img-area">
-                                                    <img src="assets/images/team-logo-5.png" alt="img" />
-                                                </div>
-                                            </div>
-                                            <div className="mid-area text-center">
                                                 <div className="countdown d-flex align-items-center justify-content-center">
                                                     <h4>
-                                                        <span className="hours">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="minutes">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="seconds">00</span>
+                                                        <span>0 - 0</span>
                                                     </h4>
                                                 </div>
-                                                <h6>Division (Norway)</h6>
+                                                <h6>Premier League</h6>
                                             </div>
                                             <div className="team-single">
-                                                <h4>Åsane</h4>
+                                                <h4>Liverpool</h4>
                                                 <span className="mdr">Away</span>
                                                 <div className="img-area">
-                                                    <img src="assets/images/team-logo-6.png" alt="img" />
+                                                    <img src="assets/images/liverpool-logo.png" alt="img" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="bottom-item">
                                             <button type="button" className="cmn-btn firstTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Eagle will win</button>
+                                                data-bs-target="#betpop-up">Win</button>
                                             <button type="button" className="cmn-btn draw" data-bs-toggle="modal"
                                                 data-bs-target="#betpop-up">Draw</button>
                                             <button type="button" className="cmn-btn lastTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Paeek will win</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="single-area">
-                                        <div className="head-area d-flex align-items-center">
-                                            <span className="mdr cmn-btn">Pick Winner</span>
-                                            <p>Mar 23, 2022,3:45PM EDT</p>
-                                        </div>
-                                        <div className="main-content">
-                                            <div className="team-single">
-                                                <h4>Lida</h4>
-                                                <span className="mdr">Home</span>
-                                                <div className="img-area">
-                                                    <img src="assets/images/team-logo-6.png" alt="img" />
-                                                </div>
-                                            </div>
-                                            <div className="mid-area text-center">
-                                                <div className="countdown d-flex align-items-center justify-content-center">
-                                                    <h4>
-                                                        <span className="hours">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="minutes">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="seconds">00</span>
-                                                    </h4>
-                                                </div>
-                                                <h6>Division (Cyprus)</h6>
-                                            </div>
-                                            <div className="team-single">
-                                                <h4>Paeek</h4>
-                                                <span className="mdr">Away</span>
-                                                <div className="img-area">
-                                                    <img src="assets/images/team-logo-7.png" alt="img" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="bottom-item">
-                                            <button type="button" className="cmn-btn firstTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Eagle will win</button>
-                                            <button type="button" className="cmn-btn draw" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Draw</button>
-                                            <button type="button" className="cmn-btn lastTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Paeek will win</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="single-area">
-                                        <div className="head-area d-flex align-items-center">
-                                            <span className="mdr cmn-btn">Pick Winner</span>
-                                            <p>Mar 23, 2022,3:45PM EDT</p>
-                                        </div>
-                                        <div className="main-content">
-                                            <div className="team-single">
-                                                <h4>Electro</h4>
-                                                <span className="mdr">Home</span>
-                                                <div className="img-area">
-                                                    <img src="assets/images/team-logo-8.png" alt="img" />
-                                                </div>
-                                            </div>
-                                            <div className="mid-area text-center">
-                                                <div className="countdown d-flex align-items-center justify-content-center">
-                                                    <h4>
-                                                        <span className="hours">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="minutes">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="seconds">00</span>
-                                                    </h4>
-                                                </div>
-                                                <h6>Division- Belarus</h6>
-                                            </div>
-                                            <div className="team-single">
-                                                <h4>Dainava</h4>
-                                                <span className="mdr">Away</span>
-                                                <div className="img-area">
-                                                    <img src="assets/images/team-logo-9.png" alt="img" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="bottom-item">
-                                            <button type="button" className="cmn-btn firstTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Eagle will win</button>
-                                            <button type="button" className="cmn-btn draw" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Draw</button>
-                                            <button type="button" className="cmn-btn lastTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Paeek will win</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="single-area">
-                                        <div className="head-area d-flex align-items-center">
-                                            <span className="mdr cmn-btn">Pick Winner</span>
-                                            <p>Mar 23, 2022,3:45PM EDT</p>
-                                        </div>
-                                        <div className="main-content">
-                                            <div className="team-single">
-                                                <h4>Eagle</h4>
-                                                <span className="mdr">Home</span>
-                                                <div className="img-area">
-                                                    <img src="assets/images/team-logo-10.png" alt="img" />
-                                                </div>
-                                            </div>
-                                            <div className="mid-area text-center">
-                                                <div className="countdown d-flex align-items-center justify-content-center">
-                                                    <h4>
-                                                        <span className="hours">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="minutes">00</span><span
-                                                            className="seperator">:</span>
-                                                    </h4>
-                                                    <h4>
-                                                        <span className="seconds">00</span>
-                                                    </h4>
-                                                </div>
-                                                <h6>Division- Belarus</h6>
-                                            </div>
-                                            <div className="team-single">
-                                                <h4>Paeek</h4>
-                                                <span className="mdr">Away</span>
-                                                <div className="img-area">
-                                                    <img src="assets/images/team-logo-11.png" alt="img" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="bottom-item">
-                                            <button type="button" className="cmn-btn firstTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Eagle will win</button>
-                                            <button type="button" className="cmn-btn draw" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Draw</button>
-                                            <button type="button" className="cmn-btn lastTeam" data-bs-toggle="modal"
-                                                data-bs-target="#betpop-up">Paeek will win</button>
+                                                data-bs-target="#betpop-up">Win</button>
                                         </div>
                                     </div>
                                 </div>
@@ -544,100 +354,6 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </section>
-                <div className="betpopmodal">
-                    <div className="modal fade" id="betpop-up" tabIndex="-1" aria-hidden="true">
-                        <div className="modal-dialog modal-dialog-centered">
-                            <div className="container">
-                                <div className="row justify-content-center">
-                                    <div className="col-xxl-8 col-xl-9 col-lg-11">
-                                        <div className="modal-content">
-                                            <div className="modal-header">
-                                                <button type="button" className="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div className="modal-body">
-                                                <div className="top-item fjalla-one">
-                                                    <a href="/#" className="cmn-btn firstTeam">Eagle will win</a>
-                                                    <a href="/#" className="cmn-btn active draw">Draw</a>
-                                                    <a href="/#" className="cmn-btn lastTeam">Paeek will win</a>
-                                                </div>
-                                                <div className="select-odds d-flex align-items-center">
-                                                    <h6>Select Odds</h6>
-                                                    <div className="d-flex in-dec-val">
-                                                        <input type="text" value="1.5" className="InDeVal2" />
-                                                        <div className="btn-area">
-                                                            <button className="plus2">
-                                                                <img src="assets/images/icon/up-arrow.png" alt="icon" />
-                                                            </button>
-                                                            <button className="minus2">
-                                                                <img src="assets/images/icon/down-arrow.png" alt="icon" />
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="mid-area">
-                                                    <div className="single-area">
-                                                        <div className="item-title d-flex align-items-center justify-content-between">
-                                                            <span>Bet Value :</span>
-                                                            <select>
-                                                                <option value="sol">SOL</option>
-                                                            </select>
-                                                        </div>
-                                                        <div className="d-flex in-dec-val">
-                                                            <input type="text" value="0.1" className="InDeVal1" />
-                                                            <div className="btn-area">
-                                                                <button className="plus">
-                                                                    <img src="assets/images/icon/up-arrow.png" alt="icon" />
-                                                                </button>
-                                                                <button className="minus">
-                                                                    <img src="assets/images/icon/down-arrow.png" alt="icon" />
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="single-area quick-amounts">
-                                                        <div className="item-title d-flex align-items-center">
-                                                            <p>Quick Amounts</p>
-                                                        </div>
-                                                        <div className="input-item">
-                                                            <button className="quickIn">0.005</button>
-                                                            <button className="quickIn">0.025</button>
-                                                            <button className="quickIn">0.1</button>
-                                                            <button className="quickIn">0.5</button>
-                                                            <button className="quickIn">2.5</button>
-                                                        </div>
-                                                    </div>
-                                                    <div className="single-area smart-value fjalla-one">
-                                                        <div className="item-title d-flex align-items-center">
-                                                            <p className="mdr">Smart Contract Value</p>
-                                                        </div>
-                                                        <div className="contact-val d-flex align-items-center">
-                                                            <h4>0.1103</h4>
-                                                            <h5>SOL</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="bottom-area">
-                                                    <div className="fee-area">
-                                                        <p>Winner will get: <span className="amount">0.179</span> SOL</p>
-                                                        <p className="fee">Escrow Fee: <span>5%</span></p>
-                                                    </div>
-                                                    <div className="btn-area">
-                                                        <button>Make (0.1 SOL) Bet</button>
-                                                    </div>
-                                                    <div className="bottom-right">
-                                                        <p>Game Closes:</p>
-                                                        <p className="date-area">Mar <span>21,2021-1:00</span> Am</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <section className="amazing-features">
                     <div className="overlay pt-120">
                         <div className="container">

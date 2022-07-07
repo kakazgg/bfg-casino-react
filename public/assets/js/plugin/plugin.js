@@ -125,8 +125,8 @@ $(function ($) {
     /* Countdown js */
     if (document.querySelector('.countdown') !== null) {
       $('.countdown').downCount({
-        date: '12/31/2022 11:59:59',
-        offset: +10
+        date: '12/31/2022 0:00:00',
+        offset: +13
       });
     }
 

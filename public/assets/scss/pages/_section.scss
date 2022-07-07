@@ -258,6 +258,19 @@
                         }
                     }
                 }
+                .score {
+                    background: #1d613a;
+                    border-radius: 10px;
+                    padding: 13px 30px;
+                    margin-bottom: 26px;
+                    h4 {
+                        margin: 0;
+                        span {
+                            font-size: inherit;
+                            font-weight: inherit;
+                        }
+                    }
+                }
             }
         }
         .bottom-item {
@@ -1015,6 +1028,12 @@
         background-color: #382590;
         padding: 0 40px 40px;
         .countdown {
+            span {
+                font-size: inherit;
+                font-weight: inherit;
+            }
+        }
+        .score {
             span {
                 font-size: inherit;
                 font-weight: inherit;

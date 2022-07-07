@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import HeaderLog from "./components/HeaderLog";
 import Footer from "./components/Footer";
 import LoginModal from "./components/LoginModal";
+import BetModal from "./components/BetModal";
 
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -70,6 +71,7 @@ function App({ checked }) {
         </Routes>
         <Footer />
         <LoginModal />
+        <BetModal />
         </div>
       </Router>
   );
