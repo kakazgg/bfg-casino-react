@@ -228,10 +228,10 @@ class Affiliate extends React.Component {
                                         fermentum dignissim et.</p>
                                     <div class="profile-area">
                                         <div class="icon-area">
-                                            <img src="assets/images/testimonails-img-2.png" alt="icon" />
+                                            <img src="assets/images/testimonails-img-4.png" alt="icon" />
                                         </div>
                                         <div class="text-area">
-                                            <h5>Hector Dawson</h5>
+                                            <h5>Frank Harold</h5>
                                             <p>United States</p>
                                         </div>
                                     </div>
