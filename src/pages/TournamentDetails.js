@@ -55,7 +55,7 @@ class TournamentDetails extends React.Component {
                                             </div>
                                         </div>
                                         <div class="last-item">
-                                            <h6>In Prizes</h6>
+                                            <h6>Prizes</h6>
                                             <h4>$2000</h4>
                                             <span class="btn-border">
                                                 <button type="button" class="cmn-btn reg" data-bs-toggle="modal" data-bs-target="#loginMod">
@@ -66,7 +66,7 @@ class TournamentDetails extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div class="row cus-mar">
+                            <div class="row cus-mar fjalla-one">
                                 <div class="col-lg-12">
                                     <div class="table-responsive mt-60">
                                         <table class="table">
@@ -228,33 +228,6 @@ class TournamentDetails extends React.Component {
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                    <div class="row mt-60">
-                                        <div class="col-lg-12 d-flex justify-content-center">
-                                            <nav aria-label="Page navigation" class="d-flex justify-content-center">
-                                                <ul class="pagination justify-content-center align-items-center">
-                                                    <li class="page-item">
-                                                        <a class="page-btn previous" href="/#"
-                                                            aria-label="Previous">
-                                                            <img src="assets/images/icon/arrow-left.png" alt="icon" />
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link xlr" href="/#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link xlr active"
-                                                        href="/#">2</a></li>
-                                                    <li class="page-item"><a class="page-link xlr" href="/#">3</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link xlr" href="/#">4</a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-btn next" href="/#" aria-label="Next">
-                                                            <img src="assets/images/icon/arrow-right.png" alt="icon" />
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

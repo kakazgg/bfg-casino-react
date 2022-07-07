@@ -3,7 +3,6 @@
 import {Route, Navigate} from 'react-router-dom';
 import {connect} from 'react-redux';
 
-
 const AuthRoute = ({children, authenticated, ...rest}) => {
     return (
         <Route
@@ -12,7 +11,7 @@ const AuthRoute = ({children, authenticated, ...rest}) => {
             ({location}) => authenticated ? (children) : (
                 <Navigate 
                 to={{
-                    pathname: "/dashboard",
+                    pathname: "/dashboardnolog",
                     state: {from: location}
 
                 }}
@@ -20,12 +19,12 @@ const AuthRoute = ({children, authenticated, ...rest}) => {
             )
         }
         />
-    )
+    );
 
-}
+};
 
-const mapStateToProps = ({session}) =>({
+const mapStateToProps = ({ session }) => ({
     authenticated: session.authenticated
-})
+});
 
 export default connect(mapStateToProps)(AuthRoute);

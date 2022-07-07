@@ -98,6 +98,7 @@ export const logoutUser = (navigate) => {
     return () => {
         sessionService.deleteSession();
         sessionService.deleteUser();
-        navigate.push('/');
+        navigate('/'); 
+        window.location.reload()   
     }
 };

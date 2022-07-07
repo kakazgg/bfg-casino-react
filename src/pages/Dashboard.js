@@ -6,9 +6,9 @@ import {logoutUser} from './../auth/actions/userActions';
 
 
 // React router
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, NavLink} from 'react-router-dom';
 
-const Dashboard = ({logoutUser, user, email}) => {
+const Dashboard = ({logoutUser, user}) => {
     const navigate = useNavigate();
         return (
             <main>
@@ -22,7 +22,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link active" id="dashboard-tab" data-bs-toggle="tab"
                                                     data-bs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
-                                                    aria-selected="true">dashboard</button>
+                                                    aria-selected="true">Overview</button>
                                             </li>
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link" id="my-bets-tab" data-bs-toggle="tab"
@@ -52,7 +52,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link" id="setting-tab" data-bs-toggle="tab"
                                                     data-bs-target="#setting" type="button" role="tab" aria-controls="setting"
-                                                    aria-selected="false">setting</button>
+                                                    aria-selected="false">Settings</button>
                                             </li>
                                         </ul>
                                     </div>
@@ -66,9 +66,9 @@ const Dashboard = ({logoutUser, user, email}) => {
                                         <div class="single-item">
                                             <img src="assets/images/profile-img-1.png" alt="images" />
                                             <h5>{user.name}</h5>
-                                            <p>ID: 32315145</p>
+                                            <p>{user._id}</p>
                                             <span class="btn-border">
-                                                <button to="#" class="cmn-btn" onClick={() => logoutUser(navigate)}>Log Out</button>
+                                                <button class="cmn-btn" onClick={() => logoutUser(navigate)}>Log Out</button>
                                             </span>
                                         </div>
                                         <div class="balance">
@@ -78,8 +78,10 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                 <p>Available Balance</p>
                                             </div>
                                             <div class="bottom-area d-flex align-items-center justify-content-between">
-                                                <a href="/#" class="mdr withdraw-btn">Withdraw</a>
-                                                <a href="/#" class="mdr deposit-btn">Deposit</a>
+                                                <a id="withdraw-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#withdraw" href="/#" class="mdr withdraw-btn fjalla-one">Withdraw</a>
+                                                <a  id="deposit-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#deposit" href="/#" class="mdr deposit-btn fjalla-one">Deposit</a>
                                             </div>
                                         </div>
                                         <div class="single-item">
@@ -87,7 +89,9 @@ const Dashboard = ({logoutUser, user, email}) => {
                                             <h5>Need Help?</h5>
                                             <p class="mdr">Have questions? Our experts are here to help!.</p>
                                             <span class="btn-border">
-                                                <a href="contact.html" class="cmn-btn">Get Started Now</a>
+                                                <button class="cmn-btn">
+                                                <NavLink to="/contact" onClick={() => window.reload()}>Get Started Now</NavLink>
+                                                </button>
                                             </span>
                                         </div>
                                     </div>
@@ -126,7 +130,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                 </div>
                                                 <div class="col-12">
                                                     <h5 class="title">Recent Activity</h5>
-                                                    <div class="table-responsive">
+                                                    <div class="table-responsive fjalla-one">
                                                         <table class="table">
                                                             <thead>
                                                                 <tr>
@@ -144,7 +148,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                     <td>
                                                                         <img src="assets/images/icon/sol-btc.png"
                                                                             alt="icon" />
-                                                                        0.00016556
+                                                                        0.00
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -154,7 +158,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                     <td>
                                                                         <img src="assets/images/icon/sol-btc.png"
                                                                             alt="icon" />
-                                                                        0.00016556
+                                                                        0.00
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -164,7 +168,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                     <td>
                                                                         <img src="assets/images/icon/sol-btc.png"
                                                                             alt="icon" />
-                                                                        13.1072000
+                                                                        0.00
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -174,7 +178,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                     <td>
                                                                         <img src="assets/images/icon/sol-btc.png"
                                                                             alt="icon" />
-                                                                        0.00016556
+                                                                        0.00
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -184,7 +188,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                     <td>
                                                                         <img src="assets/images/icon/sol-btc.png"
                                                                             alt="icon" />
-                                                                        368.033428
+                                                                        0.00
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -194,7 +198,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                     <td>
                                                                         <img src="assets/images/icon/sol-btc.png"
                                                                             alt="icon" />
-                                                                        0.00016556
+                                                                        0.00
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
@@ -214,17 +218,165 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 Playing</button>
                                                         </li>
                                                         <li class="nav-item" role="presentation">
-                                                            <button class="cmn-btn" id="canceled-tab" data-bs-toggle="tab"
-                                                                data-bs-target="#canceled" type="button" role="tab"
-                                                                aria-controls="canceled" aria-selected="false">Canceled</button>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
                                                             <button class="cmn-btn" id="finished-tab" data-bs-toggle="tab"
                                                                 data-bs-target="#finished" type="button" role="tab"
                                                                 aria-controls="finished" aria-selected="false">Finished</button>
                                                         </li>
                                                     </ul>
                                                 </div>
+                                                <div class="bet-this-game">
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="open-playing" role="tabpanel"
+                                                aria-labelledby="open-playing-tab">
+                                                <div class="single-area">
+                                                    <div class="head-area d-flex align-items-center">
+                                                        <span class="mdr cmn-btn">Pick Winner</span>
+                                                        <p>Mar 23, 2022,3:45PM EDT</p>
+                                                    </div>
+                                                    <div class="main-content">
+                                                        <div class="team-single">
+                                                            <h4>Arsenal</h4>
+                                                            <span class="mdr">Home</span>
+                                                            <div class="img-area">
+                                                                <img src="assets/images/team-logo-1.png" alt="img"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mid-area text-center">
+                                                            <div class="countdown d-flex align-items-center justify-content-center">
+                                                                <h4>
+                                                                    <span class="hours">00</span><span
+                                                                        class="seperator">:</span>
+                                                                </h4>
+                                                                <h4>
+                                                                    <span class="minutes">00</span><span
+                                                                        class="seperator">:</span>
+                                                                </h4>
+                                                                <h4>
+                                                                    <span class="seconds">00</span>
+                                                                </h4>
+                                                            </div>
+                                                            <h6>Division- Belarus</h6>
+                                                        </div>
+                                                        <div class="team-single">
+                                                            <h4>Volna</h4>
+                                                            <span class="mdr">Away</span>
+                                                            <div class="img-area">
+                                                                <img src="assets/images/team-logo-2.png" alt="img"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-item">
+                                                        <button type="button" class="cmn-btn firstTeam"
+                                                            data-bs-toggle="modal" data-bs-target="#betpop-up">Eagle will
+                                                            win</button>
+                                                        <button type="button" class="cmn-btn draw" data-bs-toggle="modal"
+                                                            data-bs-target="#betpop-up">Draw</button>
+                                                        <button type="button" class="cmn-btn lastTeam"
+                                                            data-bs-toggle="modal" data-bs-target="#betpop-up">Paeek will
+                                                            win</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="canceled" role="tabpanel"
+                                                aria-labelledby="canceled-tab">
+                                                <div class="single-area">
+                                                    <div class="head-area d-flex align-items-center">
+                                                        <span class="mdr cmn-btn">Pick Winner</span>
+                                                        <p>Mar 23, 2022,3:45PM EDT</p>
+                                                    </div>
+                                                    <div class="main-content">
+                                                        <div class="team-single">
+                                                            <h4>Apollon</h4>
+                                                            <span class="mdr">Home</span>
+                                                            <div class="img-area">
+                                                                <img src="assets/images/team-logo-3.png" alt="img"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mid-area text-center">
+                                                            <div class="countdown d-flex align-items-center justify-content-center">
+                                                                <h4>
+                                                                    <span class="hours">00</span><span
+                                                                        class="seperator">:</span>
+                                                                </h4>
+                                                                <h4>
+                                                                    <span class="minutes">00</span><span
+                                                                        class="seperator">:</span>
+                                                                </h4>
+                                                                <h4>
+                                                                    <span class="seconds">00</span>
+                                                                </h4>
+                                                            </div>
+                                                            <h6>Division (Cyprus)</h6>
+                                                        </div>
+                                                        <div class="team-single">
+                                                            <h4>Paeek</h4>
+                                                            <span class="mdr">Away</span>
+                                                            <div class="img-area">
+                                                                <img src="assets/images/team-logo-4.png" alt="img"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-item">
+                                                        <button type="button" class="cmn-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#betpop-up">Eagle will win</button>
+                                                        <button type="button" class="cmn-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#betpop-up">Draw</button>
+                                                        <button type="button" class="cmn-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#betpop-up">Paeek will win</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="finished" role="tabpanel"
+                                                aria-labelledby="finished-tab">
+                                                <div class="single-area">
+                                                    <div class="head-area d-flex align-items-center">
+                                                        <span class="mdr cmn-btn">Pick Winner</span>
+                                                        <p>Mar 23, 2022,3:45PM EDT</p>
+                                                    </div>
+                                                    <div class="main-content">
+                                                        <div class="team-single">
+                                                            <h4>Raufoss</h4>
+                                                            <span class="mdr">Home</span>
+                                                            <div class="img-area">
+                                                                <img src="assets/images/team-logo-5.png" alt="img"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mid-area text-center">
+                                                            <div class="countdown d-flex align-items-center justify-content-center">
+                                                                <h4>
+                                                                    <span class="hours">00</span><span
+                                                                        class="seperator">:</span>
+                                                                </h4>
+                                                                <h4>
+                                                                    <span class="minutes">00</span><span
+                                                                        class="seperator">:</span>
+                                                                </h4>
+                                                                <h4>
+                                                                    <span class="seconds">00</span>
+                                                                </h4>
+                                                            </div>
+                                                            <h6>Division (Norway)</h6>
+                                                        </div>
+                                                        <div class="team-single">
+                                                            <h4>Åsane</h4>
+                                                            <span class="mdr">Away</span>
+                                                            <div class="img-area">
+                                                                <img src="assets/images/team-logo-6.png" alt="img"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom-item">
+                                                        <button type="button" class="cmn-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#betpop-up">Eagle will win</button>
+                                                        <button type="button" class="cmn-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#betpop-up">Draw</button>
+                                                        <button type="button" class="cmn-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#betpop-up">Paeek will win</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                                
                                             </div>
                                         </div>
@@ -241,13 +393,12 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 </select>
                                                             </div>
                                                             <h6>0.00 <span>SOL</span></h6>
-                                                            <p class="mdr">1 SOL = 34 USD</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-xxl-8 col-xl-7">
                                                         <div class="right-area">
                                                             <h5>Deposit</h5>
-                                                            <p class="para-area">You may switch to other currencies in the Left side
+                                                            <p class="para-area">You may switch to other currencies on the left side
                                                                 option.</p>
                                                             <div class="address-bar">
                                                                 <p>SOL Deposit Address</p>
@@ -260,11 +411,6 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 </div>
                                                             </div>
                                                             <div class="bottom-area">
-                                                                <div class="single-item">
-                                                                    <h6>Important :</h6>
-                                                                    <p>Send only SOL to this address, sending any other coin or
-                                                                        token</p>
-                                                                </div>
                                                                 <div class="single-item">
                                                                     <h6>Notice :</h6>
                                                                     <p>Your deposit will be credited after 4 confirmations on the SOL
@@ -289,13 +435,12 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 </select>
                                                             </div>
                                                             <h6>0.00 <span>SOL</span></h6>
-                                                            <p class="mdr">1 SOL = 34 USD</p>
                                                         </div>
                                                     </div>
                                                     <div class="col-xxl-8 col-xl-7">
                                                         <div class="right-area">
                                                             <h5>Withdraw</h5>
-                                                            <p class="para-area">You may switch to other currencies in the Left side
+                                                            <p class="para-area">You may switch to other currencies on the left side
                                                                 option.</p>
                                                             <div class="address-bar">
                                                                 <form action="#">
@@ -329,111 +474,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="buy-crypto" role="tabpanel" aria-labelledby="buy-crypto-tab">
-                                            <div class="buy-crypto">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="main-content">
-                                                            <h5>Buy cryptocurrency directly to your The B.F.G's Account</h5>
-                                                            <p>Once payment is completed, your cryptocurrency will be available in
-                                                                your Jugaro account within minutes</p>
-                                                            <div class="form-box">
-                                                                <p>1. Choose the crypto you wish to buy, enter the amount, and
-                                                                    choose your favorite payment method.</p>
-                                                                <form action="#">
-                                                                    <div class="row">
-                                                                        <div class="col-6">
-                                                                            <div class="input-single">
-                                                                                <label>Buy</label>
-                                                                                <div class="input-area">
-                                                                                    <select>
-                                                                                        <option value="1">SOL</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <div class="input-single">
-                                                                                <label>Payment Methods</label>
-                                                                                <div class="input-area">
-                                                                                    <select>
-                                                                                        <option value="1">Visa</option>
-                                                                                        <option value="2">Credit</option>
-                                                                                        <option value="3">Master</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="input-single">
-                                                                                <label>Amount</label>
-                                                                                <div class="input-select d-flex align-items-center">
-                                                                                    <input type="text" placeholder="100" />
-                                                                                    <select>
-                                                                                        <option value="1">USD</option>
-                                                                                        <option value="2">SGD</option>
-                                                                                        <option value="3">AUD</option>
-                                                                                    </select>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                            <div class="table-area">
-                                                                <p>2. Choose the best offer from our payment partners, and complete
-                                                                    your purchase.</p>
-                                                                <div class="table-responsive">
-                                                                    <table class="table">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col">Channels</th>
-                                                                                <th scope="col">Arrival Time</th>
-                                                                                <th scope="col">You will get</th>
-                                                                                <th scope="col">Rate ( Fee Included)</th>
-                                                                                <th scope="col">Trade</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                            <tr>
-                                                                                <th scope="row">
-                                                                                    <img src="assets/images/icon/buy-crypto-logo-1.png"
-                                                                                        alt="icon" />
-                                                                                </th>
-                                                                                <td>5-15 mins</td>
-                                                                                <td>0.003091 SOL</td>
-                                                                                <td>39254.59 USD</td>
-                                                                                <td><a href="/#" class="cmn-btn">BUY</a></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="row">
-                                                                                    <img src="assets/images/icon/buy-crypto-logo-1.png"
-                                                                                        alt="icon" />
-                                                                                </th>
-                                                                                <td>5-15 mins</td>
-                                                                                <td>0.003091 SOL</td>
-                                                                                <td>39254.59 USD</td>
-                                                                                <td><a href="/#" class="cmn-btn">BUY</a></td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th scope="row">
-                                                                                    <img src="assets/images/icon/buy-crypto-logo-1.png"
-                                                                                        alt="icon" />
-                                                                                </th>
-                                                                                <td>5-15 mins</td>
-                                                                                <td>0.003091 SOL</td>
-                                                                                <td>39254.59 USD</td>
-                                                                                <td><a href="/#" class="cmn-btn">BUY</a></td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="tab-pane fade" id="affiliate" role="tabpanel" aria-labelledby="affiliate-tab">
                                             <div class="affiliate-tab">
                                                 <div class="row">
@@ -453,7 +494,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                     <img src="assets/images/icon/earned-referral-icon-1.png"
                                                                         alt="icon" />
                                                                     <div class="text-area">
-                                                                        <h4>$2956.00</h4>
+                                                                        <h4>$0.00</h4>
                                                                         <p class="mdr">Earned Referral</p>
                                                                     </div>
                                                                 </div>
@@ -463,13 +504,13 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                     <img src="assets/images/icon/earned-referral-icon-2.png"
                                                                         alt="icon" />
                                                                     <div class="text-area">
-                                                                        <h4>$208.00</h4>
+                                                                        <h4>$0.00</h4>
                                                                         <p class="mdr">Last Month</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="table-area">
+                                                        <div class="table-area fjalla-one">
                                                             <div
                                                                 class="head-area d-flex justify-content-between align-items-center">
                                                                 <h5>Referral History</h5>
@@ -496,28 +537,28 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                             <th scope="row">16 APR</th>
                                                                             <td>Level01</td>
                                                                             <td>Maxine24</td>
-                                                                            <td>0.00000000 SOL</td>
+                                                                            <td>0.00 SOL</td>
                                                                             <td>Maxine24@gmail.com</td>
                                                                         </tr>
                                                                         <tr>
                                                                             <th scope="row">16 APR</th>
                                                                             <td>Level01</td>
                                                                             <td>Maxine24</td>
-                                                                            <td>0.00000000 SOL</td>
+                                                                            <td>0.00 SOL</td>
                                                                             <td>Maxine24@gmail.com</td>
                                                                         </tr>
                                                                         <tr>
                                                                             <th scope="row">16 APR</th>
                                                                             <td>Level01</td>
                                                                             <td>Maxine24</td>
-                                                                            <td>0.00000000 SOL</td>
+                                                                            <td>0.00 SOL</td>
                                                                             <td>Maxine24@gmail.com</td>
                                                                         </tr>
                                                                         <tr>
                                                                             <th scope="row">16 APR</th>
                                                                             <td>Level01</td>
                                                                             <td>Maxine24</td>
-                                                                            <td>0.00000000 SOL</td>
+                                                                            <td>0.00 SOL</td>
                                                                             <td>Maxine24@gmail.com</td>
                                                                         </tr>
                                                                     </tbody>
@@ -565,7 +606,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                         </div>
                                                     </form>
                                                 </div>
-                                                <div class="table-responsive">
+                                                <div class="table-responsive fjalla-one">
                                                     <table class="table">
                                                         <thead>
                                                             <tr>
@@ -583,7 +624,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 <td>
                                                                     <img src="assets/images/icon/sol-btc.png"
                                                                         alt="icon" />
-                                                                    0.00016556
+                                                                    0.00
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -593,7 +634,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 <td>
                                                                     <img src="assets/images/icon/sol-btc.png"
                                                                         alt="icon" />
-                                                                    0.00016556
+                                                                    0.00
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -603,7 +644,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 <td>
                                                                     <img src="assets/images/icon/sol-btc.png"
                                                                         alt="icon" />
-                                                                    13.1072000
+                                                                    0.00
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -613,7 +654,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 <td>
                                                                     <img src="assets/images/icon/sol-btc.png"
                                                                         alt="icon" />
-                                                                    0.00016556
+                                                                    0.00
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -623,7 +664,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 <td>
                                                                     <img src="assets/images/icon/sol-btc.png"
                                                                         alt="icon" />
-                                                                    368.033428
+                                                                    0.00
                                                                 </td>
                                                             </tr>
                                                             <tr>
@@ -633,7 +674,7 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 <td>
                                                                     <img src="assets/images/icon/sol-btc.png"
                                                                         alt="icon" />
-                                                                    0.00016556
+                                                                    0.00
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -654,14 +695,10 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                     <img src="assets/images/demo-profile.png" alt="icon" />
                                                                 </div>
                                                                 <div class="right-area">
-                                                                    <p class="title">Upload profile photo via:</p>
                                                                     <label class="file">
                                                                         <input type="file" />
                                                                         <span class="file-custom"></span>
                                                                     </label>
-                                                                    <p class="mdr">Choose a photo from your personal computer. 3MB
-                                                                        max.
-                                                                    </p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -670,26 +707,19 @@ const Dashboard = ({logoutUser, user, email}) => {
                                                                 <img src="assets/images/icon/message-icon.png" alt="icon" />
                                                             </div>
                                                             <p class="mdr">{user.email}</p>
-                                                            <a href="personal-details-setting.html" class="mdr">Unverified
+                                                            <a href="#/" class="mdr fjalla-one">Unverified
                                                                 Account</a>
                                                         </div>
                                                         <div class="single-area">
                                                             <div class="icon-area">
                                                                 <img src="assets/images/icon/security-icon.png" alt="icon" />
                                                             </div>
-                                                            <a href="modify-login-password.html" class="cmn-btn">Change Password</a>
-                                                        </div>
-                                                        <div class="single-area">
-                                                            <p>Enable Google Authentication</p>
-                                                            <label class="switch" id="switch">
-                                                                <input type="checkbox" checked />
-                                                                <span class="slider round"></span>
-                                                            </label>
+                                                            <a href="#/" class="cmn-btn fjalla-one">Change Password</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="google-authentication mt-30" id="aaactive">
+                                            <div class="google-authentication mt-30" id="active">
                                                 <h4>Enable Google Authentication</h4>
                                                 <div class="d-flex">
                                                     <ul class="nav" role="tablist">
@@ -814,8 +844,9 @@ const Dashboard = ({logoutUser, user, email}) => {
 
 const mapStateToProps = ({session}) => ({
     user: session.user,
-    email: session.email
+    email: session.email,
+    _id: session._id
 
-})
+});
 
 export default connect(mapStateToProps, {logoutUser})(Dashboard);

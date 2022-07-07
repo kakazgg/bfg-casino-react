@@ -39,8 +39,8 @@ class Tournaments extends React.Component {
                                         <div class="img-area">
                                             <img src="assets/images/icon/how-works-icon-9.png" alt="img" />
                                         </div>
-                                        <h4>1. Join for free</h4>
-                                        <p>Click on a tournament to join</p>
+                                        <h4>1. Join for Free</h4>
+                                        <p>Click on a tournament to join!</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
@@ -49,7 +49,7 @@ class Tournaments extends React.Component {
                                             <img src="assets/images/icon/how-works-icon-10.png" alt="img" />
                                         </div>
                                         <h4>2. Bet</h4>
-                                        <p>Bet on the The B.F.G's</p>
+                                        <p>Take part in competitions<br/>by betting with The B.F.G's!</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-4">
@@ -58,7 +58,7 @@ class Tournaments extends React.Component {
                                             <img src="assets/images/icon/how-works-icon-11.png" alt="img" />
                                         </div>
                                         <h4>3. Win Prizes</h4>
-                                        <p>Winners receive prizes</p>
+                                        <p>Winners receive prizes!</p>
                                     </div>
                                 </div>
                             </div>
@@ -71,9 +71,9 @@ class Tournaments extends React.Component {
                             <div class="row justify-content-center">
                                 <div class="col-lg-5">
                                     <div class="section-header text-center">
-                                        <h5 class="sub-title">Grow your Income With The B.F.G's</h5>
+                                        <h5 class="sub-title">Can you beat the other Giants?</h5>
                                         <h2 class="title">Tournaments</h2>
-                                        <p>Compete with The B.F.G's users to find the best bettor and win cash prizes.</p>
+                                        <p>Compete with other users to find the best bettor and win prizes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -148,7 +148,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -176,7 +176,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -204,7 +204,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -232,7 +232,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -260,7 +260,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -294,7 +294,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -322,7 +322,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -350,7 +350,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -378,7 +378,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -406,7 +406,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -434,7 +434,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -468,7 +468,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -496,7 +496,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -524,7 +524,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -552,7 +552,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -580,7 +580,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>
@@ -608,7 +608,7 @@ class Tournaments extends React.Component {
                                                     </div>
                                                 </div>
                                                 <div class="last-item">
-                                                    <h6>In Prizes</h6>
+                                                    <h6>Prizes</h6>
                                                     <h4>$2000</h4>
                                                     <span class="btn-border">
                                                         <Link to="/TournamentDetails" className="cmn-btn" onClick={() => window.reload()}>Join Now</Link>

@@ -54,7 +54,7 @@ class Home extends React.Component {
                                             <img src="assets/images/icon/counter-icon-1.png" alt="img" />
                                         </div>
                                         <div className="text-area">
-                                            <h3 className="m-none"><span>$</span><span className="counter">1304,941</span></h3>
+                                            <h3 className="m-none"><span>$</span><span className="counter">1,304</span></h3>
                                             <p>Paid Out Prize in Total</p>
                                         </div>
                                     </div>
@@ -65,7 +65,7 @@ class Home extends React.Component {
                                             <img src="assets/images/icon/counter-icon-2.png" alt="img" />
                                         </div>
                                         <div className="text-area">
-                                            <h3 className="m-none"><span className="counter">76,752</span></h3>
+                                            <h3 className="m-none"><span className="counter">76</span></h3>
                                             <p>Winners</p>
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@ class Home extends React.Component {
                                             <img src="assets/images/icon/counter-icon-3.png" alt="img" />
                                         </div>
                                         <div className="text-area">
-                                            <h3 className="m-none"><span className="counter">4,392</span></h3>
+                                            <h3 className="m-none"><span className="counter">253</span></h3>
                                             <p>Players online</p>
                                         </div>
                                     </div>
@@ -101,20 +101,20 @@ class Home extends React.Component {
                                 <div className="col-lg-6">
                                     <div className="section-text">
                                         <h5 className="sub-title">Next-Level Sports Betting</h5>
-                                        <h2 className="title">A Revolution in Online Betting</h2>
+                                        <h2 className="title"><h2>The Revolution</h2> in Online Betting</h2>
                                         <p>The B.F.G's is a user-friendly, decentralised, peer-to-peer betting platform.</p>
                                     </div>
                                     <div className="row cus-mar">
                                         <div className="col-sm-6 col-6">
                                             <div className="single-item">
                                                 <img src="assets/images/icon/about-icon-1.png" alt="images" />
-                                                <h5>Peer-to-peer</h5>
+                                                <h5>Peer-to-Peer</h5>
                                             </div>
                                         </div>
                                         <div className="col-sm-6 col-6">
                                             <div className="single-item">
                                                 <img src="assets/images/icon/about-icon-2.png" alt="images" />
-                                                <h5>No limits</h5>
+                                                <h5>No Limits</h5>
                                             </div>
                                         </div>
                                         <div className="col-sm-6 col-6">
@@ -126,7 +126,7 @@ class Home extends React.Component {
                                         <div className="col-sm-6 col-6">
                                             <div className="single-item">
                                                 <img src="assets/images/icon/about-icon-4.png" alt="images" />
-                                                <h5>Community-powered</h5>
+                                                <h5>Community-Powered</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -143,9 +143,8 @@ class Home extends React.Component {
                                     <div className="section-header text-center">
                                         <h5 className="sub-title">Get to Know.</h5>
                                         <h2 className="title">How The B.F.G's Work?</h2>
-                                        <p>Our platform has been designed from the ground up to be tailored to the unique form of
-                                            betting and settlement offered by the blockchain. Follow these simple steps and make
-                                            profits!</p>
+                                        <p>The B.F.G's has been designed from the ground up to be a tailored and unique form of
+                                            betting offered by blockchain technology. Follow these simple steps and join us!</p>
                                     </div>
                                 </div>
                             </div>
@@ -181,19 +180,10 @@ class Home extends React.Component {
                                                 </h5>
                                             </li>
                                             <li className="nav-item" role="presentation">
-                                                <h5 className="nav-link" id="odds-tab" data-bs-toggle="tab" data-bs-target="#odds"
-                                                    role="tab" aria-controls="odds" aria-selected="false">
-                                                    <span className="image-area">
-                                                        <img src="assets/images/icon/how-works-icon-4.png" alt="icon" />
-                                                    </span>
-                                                    Choose your odds
-                                                </h5>
-                                            </li>
-                                            <li className="nav-item" role="presentation">
                                                 <h5 className="nav-link" id="amount-tab" data-bs-toggle="tab" data-bs-target="#amount"
                                                     role="tab" aria-controls="amount" aria-selected="false">
                                                     <span className="image-area">
-                                                        <img src="assets/images/icon/how-works-icon-5.png" alt="icon" />
+                                                        <img src="assets/images/icon/how-works-icon-4.png" alt="icon" />
                                                     </span>
                                                     Choose your amount
                                                 </h5>
@@ -247,7 +237,7 @@ class Home extends React.Component {
                                 <div className="col-lg-8">
                                     <div className="section-header text-center">
                                         <h5 className="sub-title">Lets bet!</h5>
-                                        <h2 className="title">Bets on The Game</h2>
+                                        <h2 className="title">Bet on The Game</h2>
                                         <p>Use the power of The B.F.G's fast, secured, autonomous and trustworthy platform.</p>
                                     </div>
                                 </div>
@@ -566,7 +556,7 @@ class Home extends React.Component {
                                                     aria-label="Close"></button>
                                             </div>
                                             <div className="modal-body">
-                                                <div className="top-item">
+                                                <div className="top-item fjalla-one">
                                                     <a href="/#" className="cmn-btn firstTeam">Eagle will win</a>
                                                     <a href="/#" className="cmn-btn active draw">Draw</a>
                                                     <a href="/#" className="cmn-btn lastTeam">Paeek will win</a>
@@ -617,9 +607,9 @@ class Home extends React.Component {
                                                             <button className="quickIn">2.5</button>
                                                         </div>
                                                     </div>
-                                                    <div className="single-area smart-value">
+                                                    <div className="single-area smart-value fjalla-one">
                                                         <div className="item-title d-flex align-items-center">
-                                                            <p className="mdr">Smart Contact Value</p>
+                                                            <p className="mdr">Smart Contract Value</p>
                                                         </div>
                                                         <div className="contact-val d-flex align-items-center">
                                                             <h4>0.1103</h4>
@@ -656,7 +646,7 @@ class Home extends React.Component {
                                     <div className="section-header text-center">
                                         <h5 className="sub-title">Leading the Solana betting service</h5>
                                         <h2 className="title">An Exhaustive list of Amazing Features</h2>
-                                        <p>The B.F.G's is the most advanced sports crypto beting platform and highest stakes across
+                                        <p>The B.F.G's is the most advanced crypto betting platform with the highest stakes across
                                             multiple bookmakers and exchanges.</p>
                                     </div>
                                 </div>
@@ -694,14 +684,6 @@ class Home extends React.Component {
                                         <h5>Player is King</h5>
                                     </div>
                                 </div>
-                                <div className="single-slide">
-                                    <div className="slide-content">
-                                        <div className="icon-area">
-                                            <img src="assets/images/icon/amazing-features-icon-3.png" alt="icon" />
-                                        </div>
-                                        <h5>Low Commissions</h5>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -718,8 +700,8 @@ class Home extends React.Component {
                                 <div className="col-lg-6">
                                     <div className="section-header">
                                         <h5 className="sub-title">A New Betting World</h5>
-                                        <h2 className="title">Bets on Future Currencies Prices Between Users</h2>
-                                        <p>Cutting out bookmakers, opens a new betting experience for players.</p>
+                                        <h2 className="title">Bets on Future Currency Prices Between Users</h2>
+                                        <p>Cutting out bookmakers opens a new betting experience for players.</p>
                                     </div>
                                     <div className="content-area">
                                         <div className="single-item">
@@ -873,24 +855,6 @@ class Home extends React.Component {
                                                 </div>
                                             </div>
                                             <div className="accordion-item">
-                                                <h5 className="accordion-header" id="headingFour">
-                                                    <button className="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                                        aria-expanded="false" aria-controls="collapseFour">
-                                                        Can I set the odds for any bet I want?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapseFour" className="accordion-collapse collapse"
-                                                    aria-labelledby="headingFour" data-bs-parent="#accordionFaqs">
-                                                    <div className="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item">
                                                 <h5 className="accordion-header" id="headingFive">
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseFive"
@@ -945,24 +909,6 @@ class Home extends React.Component {
                                                 </div>
                                             </div>
                                             <div className="accordion-item">
-                                                <h5 className="accordion-header" id="headingeight">
-                                                    <button className="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseeight"
-                                                        aria-expanded="false" aria-controls="collapseeight">
-                                                        How do I deposit/transfer money to my transactions?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapseeight" className="accordion-collapse collapse"
-                                                    aria-labelledby="headingeight" data-bs-parent="#accordionFaqs">
-                                                    <div className="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="accordion-item">
                                                 <h5 className="accordion-header" id="headingNine">
                                                     <button className="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseNight"
@@ -1000,11 +946,11 @@ class Home extends React.Component {
                                     <div className="section-text">
                                         <h5 className="sub-title">Join forces with The B.F.G's</h5>
                                         <h2 className="title">Earn As Our Affilliate</h2>
-                                        <p>Join our affiliate program and earn up to 50% in revshare. Are you an experienced affiliate? Or, maybe you're brand new to the space. At The BFGs we welcome all levels of experience and would love to have you as part of our affiliate team. Partner with us today and earn as your referrals start playing.</p>
+                                        <p>Join our affiliate program and earn up to 50% in revshare. Are you an experienced affiliate? Or, maybe you're brand new to the space. At The B.F.G's we welcome all levels of experience and would love to have you as part of our affiliate team. Partner with us today and earn as your referrals start playing.</p>
                                     </div>
                                     <div className="bottom-area">
                                         <div className="btn-border d-inline-block">
-                                            <a href="affiliate.html" className="cmn-btn">Read More</a>
+                                            <NavLink to="/affilliate" className="cmn-btn fjalla-one">Read More</NavLink>
                                         </div>
                                     </div>
                                 </div>

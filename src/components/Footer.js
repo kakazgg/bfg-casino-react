@@ -10,13 +10,13 @@ class Footer extends React.Component {
                 <div className="col-lg-10">
                     <div className="newsletter">
                         <div className="section-text text-center">
-                            <h5 className="sub-title">Subscribe Us</h5>
-                            <h3 className="title">For Newsletter</h3>
-                            <p>Subscribe to our newsletter to receive all the latest news and updates</p>
+                            <h5 className="sub-title">Subscribe to Us</h5>
+                            <h3 className="title">Newsletter</h3>
+                            <p>Subscribe to our newsletter to receive all the latest news and updates.</p>
                         </div>
                         <form action="#">
                             <div className="form-group d-flex align-items-center">
-                                <input type="text" placeholder="Enter your email Address"/>
+                                <input type="text" placeholder="Email Address"/>
                                 <button><img src="assets/images/icon/arrow-right-2.png" alt="icon"/></button>
                             </div>
                         </form>

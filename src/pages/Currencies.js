@@ -53,7 +53,7 @@ class Currencies extends React.Component {
                             </div>
                             <div class="row cus-mar">
                                 <div class="col-lg-12">
-                                    <div class="table-responsive">
+                                    <div class="table-responsive fjalla-one">
                                         <table class="table">
                                             <thead>
                                                 <tr>
@@ -223,9 +223,9 @@ class Currencies extends React.Component {
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                     <div class="single-input">
-                                                        <label for="nickname">Your Nickname for this bet</label>
+                                                        <label for="nickname">Your Name for this Bet</label>
                                                         <input type="text" id="nickname"
-                                                            placeholder="Please insert your name or nickname" />
+                                                            placeholder="Please insert your name" />
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
@@ -239,7 +239,7 @@ class Currencies extends React.Component {
                                                                             <span class="checkmark"></span>
                                                                         </span>
                                                                         <span class="item-title d-flex align-items-center">
-                                                                            <span>Invite friends to your bet</span>
+                                                                            <span>Invite friends to your et</span>
                                                                         </span>
                                                                     </span>
                                                                 </label>
@@ -297,30 +297,28 @@ class Currencies extends React.Component {
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="single-input d-grid">
-                                                        <label for="price">In the expiration date, price will be</label>
+                                                        <label for="price">Future Price</label>
                                                         <div class="input-select d-flex">
                                                             <select>
                                                                 <option>Below</option>
-                                                                <option value="2">Below 1</option>
-                                                                <option value="3">Below 2</option>
-                                                                <option value="4">Below 3</option>
+                                                                <option value="2">Above</option>
                                                             </select>
-                                                            <input type="text" id="price" placeholder="write future price" />
+                                                            <input type="text" id="price" placeholder="Future Price" />
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="single-input">
-                                                        <label for="closing-date">Bet Closing date/Time</label>
+                                                        <label for="closing-date">Bet Closing Date/Time</label>
                                                         <input type="text" id="closing-date" placeholder="Choose Closing Date" />
                                                         <p class="mdr">(No player can join this bet after this date)</p>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="single-input">
-                                                        <label for="finish-date">Bet Expiration date/Time</label>
+                                                        <label for="finish-date">Bet Expiration Date/Time</label>
                                                         <input type="text" id="finish-date" placeholder="Choose Finish Date" />
-                                                        <p class="mdr">(Date we select the winner, based on the currency price)</p>
+                                                        <p class="mdr">(Date the winner is chosen, based on the currency price)</p>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
@@ -331,199 +329,13 @@ class Currencies extends React.Component {
                                                 <div class="col-lg-12">
                                                     <div class="more-info">
                                                         <ul>
-                                                            <li>You can cancel any time, as long no one join your bet.</li>
-                                                            <li>Base market is Solana</li>
-                                                            <li>Future currency results are based on binance exchange</li>
+                                                            <li>Base market is Solana.</li>
+                                                            <li>Future currency results are based on the Binance exchange feed.</li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="faqs-section second">
-                    <div class="overlay pt-120">
-                        <div class="container">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-lg-7">
-                                    <div class="section-header text-center">
-                                        <h5 class="sub-title">Frequently Asked Questions</h5>
-                                        <h2 class="title">If you have questions we have answer</h2>
-                                        <p>Answers for our most popular questions about sportsbetting, crypto, and The B.F.G's</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row faq-bg d-flex justify-content-center">
-                                <div class="col-xl-10">
-                                    <div class="faq-box mt-60 mb-60">
-                                        <div class="accordion" id="accordionFaqs">
-                                            <div class="accordion-item">
-                                                <h5 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                        aria-expanded="false" aria-controls="collapseOne">
-                                                        I want to play at The B.F.G's, What do i need to do?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapseOne" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingOne" data-bs-parent="#accordionFaqs">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h5 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                        aria-expanded="false" aria-controls="collapseTwo">
-                                                        How fast do I get paid once I win a bet?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionFaqs">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h5 class="accordion-header" id="headingThree">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                        aria-expanded="false" aria-controls="collapseThree">
-                                                        What are the commissions I have to pay?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapseThree" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingThree" data-bs-parent="#accordionFaqs">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h5 class="accordion-header" id="headingFour">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                                        aria-expanded="false" aria-controls="collapseFour">
-                                                        Can I set the odds for any bet I want?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapseFour" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingFour" data-bs-parent="#accordionFaqs">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h5 class="accordion-header" id="headingFive">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                                        aria-expanded="false" aria-controls="collapseFive">
-                                                        What kind of Escrow do you provide?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapseFive" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingFive" data-bs-parent="#accordionFaqs">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h5 class="accordion-header" id="headingsix">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapsesix"
-                                                        aria-expanded="false" aria-controls="collapsesix">
-                                                        What makes us unique?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapsesix" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingsix" data-bs-parent="#accordionFaqs">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h5 class="accordion-header" id="headingsaven">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapsesaven"
-                                                        aria-expanded="false" aria-controls="collapsesaven">
-                                                        Is the Escrow payment secured?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapsesaven" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingsaven" data-bs-parent="#accordionFaqs">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h5 class="accordion-header" id="headingeight">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseeight"
-                                                        aria-expanded="false" aria-controls="collapseeight">
-                                                        How do I deposit/transfer money to my transactions?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapseeight" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingeight" data-bs-parent="#accordionFaqs">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="accordion-item">
-                                                <h5 class="accordion-header" id="headingNine">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapseNight"
-                                                        aria-expanded="false" aria-controls="collapseNight">
-                                                        How do I withdraw money from my The B.F.G's Bets account?
-                                                    </button>
-                                                </h5>
-                                                <div id="collapseNight" class="accordion-collapse collapse"
-                                                    aria-labelledby="headingNine" data-bs-parent="#accordionFaqs">
-                                                    <div class="accordion-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                            industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                            since the 1500s, when an unknown printer took a galley of type and
-                                                            scrambled it to make a type specimen book.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -541,14 +353,13 @@ class Currencies extends React.Component {
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="section-text">
-                                        <h5 class="sub-title">Are You a degen?</h5>
-                                        <h2 class="title">Your 1st Prediction is on us</h2>
-                                        <p>Don't wait another minute. Take action straight from The B.F.G's Wallet and benefit from
-                                            instant trade execution and the best exchange rates out there</p>
+                                        <h5 class="sub-title">Are you a degen?</h5>
+                                        <h2 class="title">Your 1st Prediction is on us.</h2>
+                                        <p>Don't wait another minute. Take action straight from our wallet and make a prediction!</p>
                                     </div>
                                     <span class="btn-border">
                                         <button type="button" class="cmn-btn reg" data-bs-toggle="modal" data-bs-target="#loginMod">
-                                            Get Start Now
+                                            Get Started Now
                                         </button>
                                     </span>
                                 </div>

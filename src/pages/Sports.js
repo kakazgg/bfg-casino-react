@@ -58,16 +58,6 @@ class Sports extends React.Component {
                                         <div class="col-xl-3 col-lg-6">
                                             <div class="single-input">
                                                 <select>
-                                                    <option>Search by team name</option>
-                                                    <option value="2">Team 1</option>
-                                                    <option value="3">Team 2</option>
-                                                    <option value="4">Team 3</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6">
-                                            <div class="single-input">
-                                                <select>
                                                     <option>Select League</option>
                                                     <option value="1">League 1</option>
                                                     <option value="2">League 2</option>

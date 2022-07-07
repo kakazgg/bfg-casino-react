@@ -930,9 +930,8 @@ p {
 .banner-section .overlay {
   background-color: #022D4F;
   background-image: url(../images/index-bg.png);
-  background-position: top 0px right -470px, top 0px right 0;
-  position: relative;
-  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover!important;
 }
 
 .banner-section .overlay .shape-area img {
@@ -5520,5 +5519,27 @@ input[type="password"] {
 .forgot-password {
   font-family: "fjalla one";
   color: #fe8f9c;
+}
+
+.fjalla-one {
+  font-family: "fjalla one";
+}
+
+.userNav {
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.userID {
+  font-size: 15px;
+}
+
+.userName {
+  padding-left: 25px;
+}
+
+.userBalance {
+  text-align: center;
+  padding-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

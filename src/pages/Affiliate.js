@@ -34,15 +34,15 @@ class Affiliate extends React.Component {
                                     <div class="section-header">
                                         <h5 class="sub-title">Grow your Income With The B.F.G's</h5>
                                         <h2 class="title">Earn more with The B.F.G's Referral Program</h2>
-                                        <p>The most advanced and rewarding Solana affiliate program on the market. It's time to
-                                            start your profitable cooperation with a trusted and licensed partner.
-                                            With up to 45% revenue share deal on offer, you will get the best tool to monetize your
+                                        <p>The most advanced and rewarding Solana affilliate program on the market. It's time to
+                                            start your affiliate project with a trusted and licensed partner.
+                                            With up to 50% revenue share deal on offer, you will get the best tool to monetize your
                                             gambling traffic.</p>
                                         <ul>
-                                            <li>Generous commissions & fast payouts</li>
-                                            <li>The fee commission will be sent instantly in real-time</li>
-                                            <li>There is no limit to the number of friends you can refer</li>
-                                            <li>Each referee must be signed up through your Referral Link, QR Code or Referral ID.
+                                            <li>Generous commissions and fast payouts.</li>
+                                            <li>The fee commission will be sent instantly in real-time.</li>
+                                            <li>There is no limit to the number of friends you can refer.</li>
+                                            <li>Each referee must be signed up through your referral Link.
                                             </li>
                                         </ul>
                                     </div>
@@ -129,7 +129,7 @@ class Affiliate extends React.Component {
                                                 <div class="img-area">
                                                     <img src="assets/images/icon/how-works-icon-6.png" alt="img" />
                                                 </div>
-                                                <h4>1.Join us!</h4>
+                                                <h4>1. Join us!</h4>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -137,7 +137,7 @@ class Affiliate extends React.Component {
                                                 <div class="img-area">
                                                     <img src="assets/images/icon/how-works-icon-7.png" alt="img" />
                                                 </div>
-                                                <h4>2.Start Inviting!</h4>
+                                                <h4>2. Start Inviting!</h4>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
@@ -145,7 +145,7 @@ class Affiliate extends React.Component {
                                                 <div class="img-area">
                                                     <img src="assets/images/icon/how-works-icon-8.png" alt="img" />
                                                 </div>
-                                                <h4>3.Get Paid</h4>
+                                                <h4>3. Get Paid!</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -171,8 +171,7 @@ class Affiliate extends React.Component {
                                 <div class="col-lg-6">
                                     <div class="section-header text-center">
                                         <h5 class="sub-title">Frequently Asked Questions</h5>
-                                        <h2 class="title">What our users say?</h2>
-                                        <p>Answers for our most popular questions about sportsbetting, crypto, and The B.F.G's</p>
+                                        <h2 class="title">What our Affiliates say?</h2>
                                     </div>
                                 </div>
                             </div>

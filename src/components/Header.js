@@ -9,10 +9,10 @@ class Header extends React.Component {
                     <div className="container">
                         <div className="row d-flex header-area">
                             <nav className="navbar navbar-expand-lg navbar-light">
-                                <a className="navbar-brand" href="index.html">
+                                <NavLink className="navbar-brand" to="/" onClick={() => window.reload()}>
                                     <span className="specialelite logothetext">The </span>
                                     <span className="permanentmarker logoBFGtext">B.F.G's</span>
-                                </a>
+                                </NavLink>
                                 <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#navbar-content">
                                     <i className="fas fa-bars"></i>

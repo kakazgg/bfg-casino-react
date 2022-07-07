@@ -19,12 +19,12 @@ const BasicRoute = ({children, authenticated, ...rest}) => {
             )
         }
         />
-    )
+    );
 
-}
+};
 
 const mapStateToProps = ({session}) =>({
     authenticated: session.authenticated
-})
+});
 
 export default connect(mapStateToProps)(BasicRoute);
