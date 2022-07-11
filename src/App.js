@@ -31,6 +31,7 @@ function App({ checked }) {
 
   return (
       <Router forceRefresh={true}>
+         {checked && (
         <div>
         <Header />
         <Routes>
@@ -38,10 +39,10 @@ function App({ checked }) {
           <Route elements={<BasicRoute/>}>
              <Route path="/dashboardnolog" element={<DashboardNoLog />} />
           </Route>
-          <Route elements={<BasicRoute/>}>
+          <Route elements={<AuthRoute/>}>
              <Route path="/dashboard" element={<Dashboard />} />
           </Route>
-          <Route elements={<AuthRoute />}>
+          <Route elements={<BasicRoute />}>
              <Route path="/sports" element={<Sports />} />
           </Route>
           <Route elements={<BasicRoute/>}>
@@ -73,6 +74,7 @@ function App({ checked }) {
         <LoginModal />
         <BetModal />
         </div>
+         )}
       </Router>
   );
 }

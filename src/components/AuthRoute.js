@@ -11,7 +11,7 @@ const AuthRoute = ({children, authenticated, ...rest}) => {
             ({location}) => authenticated ? (children) : (
                 <Navigate 
                 to={{
-                    pathname: "/dashboardnolog",
+                    pathname: "/dashboard",
                     state: {from: location}
 
                 }}
