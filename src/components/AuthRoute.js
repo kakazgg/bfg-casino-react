@@ -1,7 +1,6 @@
 // Dashboard cannot be accessed unless logged in
 
 import {Route, Navigate} from 'react-router-dom';
-import {connect} from 'react-redux';
 
 const AuthRoute = ({children, authenticated, ...rest}) => {
     return (
@@ -13,7 +12,6 @@ const AuthRoute = ({children, authenticated, ...rest}) => {
                 to={{
                     pathname: "/dashboardnolog",
                     state: {from: location}
-
                 }}
                 />
             )
@@ -23,8 +21,8 @@ const AuthRoute = ({children, authenticated, ...rest}) => {
 
 };
 
-const mapStateToProps = ({ session }) => ({
-    authenticated: session.authenticated
-});
+// const mapStateToProps = ({ session }) => ({
+//     authenticated: session.authenticated
+// });
 
-export default connect(mapStateToProps)(AuthRoute);
+export default AuthRoute; 
