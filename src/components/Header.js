@@ -23,7 +23,7 @@ class Header extends React.Component {
                                             <NavLink className="nav-link" to="/" onClick={() => window.reload()}>Home</NavLink>
                                         </li>
                                         <li className="nav-item">
-                                            <NavLink className="nav-link" to="/DashboardNoLog" onClick={() => window.reload()}>Dashboard</NavLink>
+                                            <NavLink className="nav-link" to="/dashboard" onClick={() => window.reload()}>Dashboard</NavLink>
                                         </li>
                                         <li className="nav-item">
                                             <NavLink className="nav-link" to="/Sports" onClick={() => window.reload()}>Sports</NavLink>

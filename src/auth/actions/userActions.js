@@ -31,17 +31,14 @@ export const loginUser = (credentials, navigate, setFieldError, setSubmitting) =
 
         } else if (data.status === "SUCCESS") {
             const userData = data.data[0];
-
             const token = userData._id;
 
             sessionService.saveSession(token).then(() => {
                 sessionService.saveUser(userData).then(() => {
                     navigate("/dashboard");
                     window.location.reload();
-
                 }).catch(err => console.error(err))
             }).catch(err => console.error(err))
-
         }
 
         //complete submission
@@ -95,10 +92,13 @@ export const signupUser = (credentials, navigate, setFieldError, setSubmitting) 
 };
 
 export const logoutUser = (navigate) => {
+   console.log(">> yes, let me logout <<");
     return () => {
-        sessionService.deleteSession();
-        sessionService.deleteUser();
-        navigate('/'); 
-        window.location.reload()   
+        sessionService.deleteSession().then(() => {
+          sessionService.deleteUser().then(() => {
+            navigate('/'); 
+            window.location.reload();
+          });
+        });
     }
 };

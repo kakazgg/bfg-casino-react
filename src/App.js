@@ -1,4 +1,3 @@
-
 import Home from "./pages/Home";
 import DashboardNoLog from "./pages/DashboardNoLog";
 import Dashboard from "./pages/Dashboard";
@@ -13,73 +12,77 @@ import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
 
 import Header from "./components/Header";
+import HeaderLog from "./components/HeaderLog";
 import Footer from "./components/Footer";
 import LoginModal from "./components/LoginModal";
 import BetModal from "./components/BetModal";
 
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // auth & redux
-import AuthRoute from "./components/AuthRoute";
 import BasicRoute from "./components/BasicRoute";
 import { connect } from "react-redux";
 
-import './App.css';
+import "./App.css";
 
-function App({ checked }) {
-
+function App({ authenticated, checked }) {
   return (
-      <Router forceRefresh={true}>
-         {checked && (
+    <Router forceRefresh={true}>
+      {checked && (
         <div>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route elements={<BasicRoute/>}>
-             <Route path="/dashboardnolog" element={<DashboardNoLog />} />
-          </Route>
-          <Route elements={<AuthRoute/>}>
-             <Route path="/dashboard" element={<Dashboard />} />
-          </Route>
-          <Route elements={<BasicRoute />}>
-             <Route path="/sports" element={<Sports />} />
-          </Route>
-          <Route elements={<BasicRoute/>}>
-             <Route path="/currencies" element={<Currencies />} />
-          </Route>
-          <Route elements={<BasicRoute/>}>
-             <Route path="/currencybetdetails" element={<CurrencyBetDetails />} />
-          </Route>
-          <Route elements={<BasicRoute/>}>
-             <Route path="/tournaments" element={<Tournaments />} />
-          </Route>
-          <Route elements={<BasicRoute/>}>
-             <Route path="/tournamentdetails" element={<TournamentDetails />} />
-          </Route>
-          <Route elements={<BasicRoute/>}>
-             <Route path="/affiliate" element={<Affiliate />} />
-          </Route>
-          <Route elements={<BasicRoute/>}>
-             <Route path="/terms" element={<Terms />} />
-          </Route>
-          <Route elements={<BasicRoute/>}>
-             <Route path="/privacy" element={<Privacy />} />
-          </Route>
-          <Route elements={<BasicRoute/>}>
-             <Route path="/contact" element={<Contact />} />
-          </Route>
-        </Routes>
-        <Footer />
-        <LoginModal />
-        <BetModal />
+          {!authenticated ? <Header /> : <HeaderLog />}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {authenticated ? (
+              <Route path="/dashboard" element={<Dashboard />} />
+            ) : (
+              <Route path="/dashboard" element={<DashboardNoLog />} />
+            )}
+            <Route elements={<BasicRoute />}>
+              <Route path="/sports" element={<Sports />} />
+            </Route>
+            <Route elements={<BasicRoute />}>
+              <Route path="/currencies" element={<Currencies />} />
+            </Route>
+            <Route elements={<BasicRoute />}>
+              <Route
+                path="/currencybetdetails"
+                element={<CurrencyBetDetails />}
+              />
+            </Route>
+            <Route elements={<BasicRoute />}>
+              <Route path="/tournaments" element={<Tournaments />} />
+            </Route>
+            <Route elements={<BasicRoute />}>
+              <Route
+                path="/tournamentdetails"
+                element={<TournamentDetails />}
+              />
+            </Route>
+            <Route elements={<BasicRoute />}>
+              <Route path="/affiliate" element={<Affiliate />} />
+            </Route>
+            <Route elements={<BasicRoute />}>
+              <Route path="/terms" element={<Terms />} />
+            </Route>
+            <Route elements={<BasicRoute />}>
+              <Route path="/privacy" element={<Privacy />} />
+            </Route>
+            <Route elements={<BasicRoute />}>
+              <Route path="/contact" element={<Contact />} />
+            </Route>
+          </Routes>
+          <Footer />
+          <LoginModal />
+          <BetModal />
         </div>
-         )}
-      </Router>
+      )}
+    </Router>
   );
 }
 const mapStateToProps = ({ session }) => ({
   checked: session.checked,
+  authenticated: session.authenticated,
 });
 
 export default connect(mapStateToProps)(App);

@@ -10,11 +10,10 @@ const AuthRoute = ({children, authenticated, ...rest}) => {
         render={
             ({location}) => authenticated ? (children) : (
                 <Navigate 
-                to={{
-                    pathname: "/dashboard",
-                    state: {from: location}
-
-                }}
+                  to={{
+                      pathname: "/dashboardnolog",
+                      state: {from: location}
+                  }}
                 />
             )
         }
@@ -23,8 +22,9 @@ const AuthRoute = ({children, authenticated, ...rest}) => {
 
 };
 
-const mapStateToProps = ({ session }) => ({
-    authenticated: session.authenticated
-});
+// const mapStateToProps = ({ session }) => ({
+//     authenticated: session.authenticated
+// });
 
-export default connect(mapStateToProps)(AuthRoute);
+// export default connect(mapStateToProps)(AuthRoute);
+export default AuthRoute;
